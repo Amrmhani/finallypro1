@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@theme{
+    --first-font:'Lobster';
+    --nav-font:'Inter';
+    --line-color:#000000;
+    --section1-color:#E7FAFE;
+}
+@utility row{
+    @apply flex items-center ;
+}

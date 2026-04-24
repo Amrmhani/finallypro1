@@ -7,9 +7,11 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-400: oklch(70.4% 0.191 22.216);
+    --spacing: 0.25rem;
+    --font-weight-normal: 400;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --line-color: #000000;
   }
 }
 @layer base {
@@ -161,8 +163,72 @@
   }
 }
 @layer utilities {
+  .container {
+    width: 100%;
+    @media (width >= 40rem) {
+      max-width: 40rem;
+    }
+    @media (width >= 48rem) {
+      max-width: 48rem;
+    }
+    @media (width >= 64rem) {
+      max-width: 64rem;
+    }
+    @media (width >= 80rem) {
+      max-width: 80rem;
+    }
+    @media (width >= 96rem) {
+      max-width: 96rem;
+    }
+  }
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .ml-175 {
+    margin-left: calc(var(--spacing) * 175);
+  }
+  .ml-auto {
+    margin-left: auto;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+  }
+  .flex {
+    display: flex;
+  }
+  .hidden {
+    display: none;
+  }
   .table {
     display: table;
+  }
+  .h-5 {
+    height: calc(var(--spacing) * 5);
+  }
+  .h-7 {
+    height: calc(var(--spacing) * 7);
+  }
+  .h-7\.5 {
+    height: calc(var(--spacing) * 7.5);
+  }
+  .h-160 {
+    height: calc(var(--spacing) * 160);
+  }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
+  }
+  .w-27 {
+    width: calc(var(--spacing) * 27);
+  }
+  .w-27\.5 {
+    width: calc(var(--spacing) * 27.5);
+  }
+  .w-165 {
+    width: calc(var(--spacing) * 165);
+  }
+  .w-full {
+    width: 100%;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -170,12 +236,62 @@
   .resize {
     resize: both;
   }
+  .items-center {
+    align-items: center;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .justify-end {
+    justify-content: flex-end;
+  }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .text-red-400 {
-    color: var(--color-red-400);
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+  .border-\(--line-color\) {
+    border-color: var(--line-color);
+  }
+  .object-contain {
+    object-fit: contain;
+  }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
+  }
+  .py-11 {
+    padding-block: calc(var(--spacing) * 11);
+  }
+  .pt-10 {
+    padding-top: calc(var(--spacing) * 10);
+  }
+  .pr-5 {
+    padding-right: calc(var(--spacing) * 5);
+  }
+  .pr-20 {
+    padding-right: calc(var(--spacing) * 20);
+  }
+  .pl-20 {
+    padding-left: calc(var(--spacing) * 20);
+  }
+  .font-\[\'Inter\'\] {
+    font-family: 'Inter';
+  }
+  .font-\[\'Lobster\'\] {
+    font-family: 'Lobster';
+  }
+  .font-normal {
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
   }
   .underline {
     text-decoration-line: underline;
@@ -184,11 +300,40 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+  .sm\:hidden {
+    @media (width >= 40rem) {
+      display: none;
+    }
+  }
+  .md\:flex {
+    @media (width >= 48rem) {
+      display: flex;
+    }
+  }
+  .md\:hidden {
+    @media (width >= 48rem) {
+      display: none;
+    }
+  }
+  .lg\:flex {
+    @media (width >= 64rem) {
+      display: flex;
+    }
+  }
+  .lg\:hidden {
+    @media (width >= 64rem) {
+      display: none;
+    }
+  }
 }
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
 }
 @property --tw-outline-style {
   syntax: "*";
@@ -199,6 +344,7 @@
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
+      --tw-font-weight: initial;
       --tw-outline-style: solid;
     }
   }
