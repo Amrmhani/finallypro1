@@ -13,7 +13,7 @@ wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap" rel="style
 <body>
     <header class="border-b border-(--line-color) w-full">
         <div class=" flex  justify-between items-center ">
-          
+
             <div class="row pl-20 py-10">
                 <a class="font-['Lobster'] w-27.5 h-7.5 font-normal">
                     Foodieland
@@ -21,7 +21,7 @@ wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap" rel="style
             </div>
 
             <div class="row justify-center ">
-<ul class="row pr-20 pl-20 gap-10 font-['Inter'] hidden md:flex">
+                <ul class="row pr-20 pl-20 gap-10 font-['Inter'] hidden md:flex">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Recipes</a></li>
                     <li><a href="#">Blog</a></li>
@@ -37,28 +37,148 @@ wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap" rel="style
                     <li><img src="assets/img/navimgs/instagram.png"></li>
                 </ul>
             </div>
-              <div class="flex md:hidden ml-auto pr-5">
+            <div class="flex md:hidden ml-auto pr-5">
                 <button class="">
                     <img src="assets/img/navimgs/Menu.png">
                 </button>
             </div>
-          <div class="hidden md:flex ml-auto pr-5">
-    <button>
-        <img src="assets/img/navimgs/send.png" class="w-5 h-5 object-contain">
-    </button>
-</div>
+            <div class="hidden md:flex lg:hidden ml-auto pr-5">
+                <button>
+                    <img src="assets/img/navimgs/send.png" class="w-5 h-5 object-contain">
+                </button>
+            </div>
 
         </div>
     </header>
-    <main>
-        <div class="container mx-auto">
-            <div>
-                <div class="w-165 h-160 pt-10 ml-175">
-                    <img src="assets/img/Mask Group.png">
+    <main class=" py-16 relative z-0">
+        <div class="hidden md:block absolute left-0 top-15
+            w-10 h-150 bg-(--main-section)
+            rounded-r-full opacity-50 z-0">
+        </div>
+
+        <div class="hidden md:block absolute right-0 top-15 
+            w-10 h-150 bg-(--main-section)
+            rounded-l-full opacity-50 z-0">
+        </div>
+        <div class="container mx-auto px-4">
+
+            <div class="flex flex-col md:flex-row overflow-hidden rounded-3xl">
+                <div
+                    class="order-2 md:order-1 bg-(--main-section) p-10 md:p-14 flex flex-col justify-center space-y-6 relative">
+
+                    <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-full w-fit shadow-sm">
+                        <img src="assets/img/mainsection/Recipes.png" class="w-5 h-5">
+                        <span class="font-semibold text-sm">Hot Recipes</span>
+                    </div>
+
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+                        Spicy delicious <br> chicken wings
+                    </h1>
+
+                    <p class="text-gray-500 leading-relaxed max-w-md">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+
+                    <div class="flex gap-4 flex-wrap">
+
+                        <div class="flex items-center gap-2 bg-gray-200 px-4 py-2 rounded-full text-sm">
+                            <img src="assets/img/mainsection/Timer.png" class="w-4 h-4">
+                            <span>30 Minutes</span>
+                        </div>
+
+                        <div class="flex items-center gap-2 bg-gray-200 px-4 py-2 rounded-full text-sm">
+                            <img src="assets/img/mainsection/ForkKnife.png" class="w-4 h-4">
+                            <span>Chicken</span>
+                        </div>
+
+                    </div>
+
+                    <div class="flex items-center justify-between pt-4 flex-wrap gap-4">
+
+                        <div class="flex items-center gap-3">
+                            <img src="assets/img/mainsection/Ellipse 2.png" class="w-10 h-10 rounded-full">
+                            <div>
+                                <p class="font-semibold text-sm">John Smith</p>
+                                <p class="text-gray-400 text-xs">15 March 2022</p>
+                            </div>
+                        </div>
+
+                        <button class="bg-black text-white px-6 py-3 rounded-xl flex items-center gap-2">
+                            View Recipes
+                            <span><img src="assets/img/mainsection/PlayCircle.png" alt=""></span>
+                        </button>
+
+                    </div>
+
                 </div>
+
+                <div class=" order-1 md:order-2  relative">
+                    <img src="assets/img/mainsection/Mask Group.png" class="w-full h-full object-cover transform ">
+
+                    <div class="absolute top-1/4  -translate-x-1/2 -translate-y-1/2 w-28 h-28 z-20 ">
+                        <img src="assets/img/mainsection/Badge.png" class="w-full h-full object-contain ">
+                    </div>
+                </div>
+
             </div>
         </div>
     </main>
+  <section class="font-['Inter'] container mx-auto pt-40">
+
+  <div class="row pb-20">
+    <h1 class=" font-semibold text-[48px] leading-[100%] tracking-[-0.04em]">
+      Categories
+    </h1>
+    <button class="ml-auto bg-(--main-section) w-50 h-15 rounded-xl  font-semibold text-[16px] leading-[100%] tracking-[-0.02em]">
+      View All Categories
+    </button>
+  </div>
+
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 justify-items-center">
+
+    <div class="relative w-45 h-50.5 flex flex-col items-center">
+      <img src="assets/img/Categoriesimgs/Breakfast.png" class="w-25 h-25 block relative z-10">
+      <div class="absolute bottom-0 left-0 w-45 h-38 rounded-xl z-0 bg-linear-to-b from-[var(--color-Breakfast-card-from)] "></div>
+      <h1 class="relative z-10  font-semibold text-[18px] leading-[100%] tracking-[-0.02em] mt-12.5">Breakfast</h1>
+    </div>
+
+    <div class="relative w-45 h-50.5 flex flex-col items-center">
+      <img src="assets/img/Categoriesimgs/Vegan.png" class="w-25 h-25 block relative z-10">
+      <div class="absolute bottom-0 left-0 w-45 h-38 rounded-xl z-0 bg-linear-to-b from-[var(--color-Vegan-card-from)] "></div>
+      <h1 class="relative z-10  font-semibold text-[18px] leading-[100%] tracking-[-0.02em] mt-12.5">Vegan</h1>
+    </div>
+
+    <div class="relative w-45 h-50.5 flex flex-col items-center">
+      <img src="assets/img/Categoriesimgs/Meat.png" class="w-25 h-25 block relative z-10">
+      <div class="absolute bottom-0 left-0 w-45 h-38 rounded-xl z-0 bg-linear-to-b from-[var(--color-Meat-card-from)] "></div>
+      <h1 class="relative z-10  font-semibold text-[18px] leading-[100%] tracking-[-0.02em] mt-12.5">Meat</h1>
+    </div>
+
+    <div class="relative w-45 h-50.5 flex flex-col items-center">
+      <img src="assets/img/Categoriesimgs/Dessert.png" class="w-25 h-25 block relative z-10">
+      <div class="absolute bottom-0 left-0 w-45 h-38 rounded-xl z-0 bg-linear-to-b from-[var(--color-Dessert-card-from)] "></div>
+      <h1 class="relative z-10  font-semibold text-[18px] leading-[100%] tracking-[-0.02em] mt-12.5">Dessert</h1>
+    </div>
+
+    <div class="relative w-45 h-50.5 flex flex-col items-center">
+      <img src="assets/img/Categoriesimgs/Lunch.png" class="w-25 h-25 block relative z-10">
+      <div class="absolute bottom-0 left-0 w-45 h-38 rounded-xl z-0 bg-linear-to-b from-[var(--color-Lunch-card-from)] "></div>
+      <h1 class="relative z-10 font-semibold text-[18px] leading-[100%] tracking-[-0.02em] mt-12.5">Lunch</h1>
+    </div>
+
+    <div class="relative w-45 h-50.5 flex flex-col items-center">
+      <img src="assets/img/Categoriesimgs/Chocolate.png" class="w-25 h-25 block relative z-10">
+      <div class="absolute bottom-0 left-0 w-45 h-38 rounded-xl z-0 bg-linear-to-b from-[var(--color-Chocolate-card-from)] "></div>
+      <h1 class="relative z-10  font-semibold text-[18px] leading-[100%] tracking-[-0.02em] mt-12.5">Chocolate</h1>
+    </div>
+
+  </div>
+
+</section>
+
+
+
 </body>
 
 </html>
