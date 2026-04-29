@@ -1,19 +1,17 @@
 @import "tailwindcss";
 
 @theme{
+   --Primary-color:#E7F9FD;
     --first-font:'Lobster';
     --nav-font:'Inter';
     --line-color:#000000;
     --section1-color:#E7FAFE;
-    --main-section:#E7F9FD;
-    --color-Breakfast-card-from: #7082461A;
-    --color-Vegan-card-from:#6CC63F1A;
-    --color-Meat-card-from:#CC261B1A;
-    --color-Dessert-card-from:#F09E001A;
-    --color-Lunch-card-from:#0000000D;
-    --color-Chocolate-card-from:#0000000D;  
-
-
+    --color-Breakfast: #7082461A;
+    --color-Vegan:#6CC63F1A;
+    --color-Meat:#CC261B1A;
+    --color-Dessert:#F09E001A;
+    --color-Lunch:#0000000D;
+    --color-Chocolate:#0000000D;  
 }
 @utility row{
     @apply flex items-center ;

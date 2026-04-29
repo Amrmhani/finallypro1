@@ -52,19 +52,19 @@ wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap" rel="style
     </header>
     <main class=" py-16 relative z-0">
         <div class="hidden md:block absolute left-0 top-15
-            w-10 h-150 bg-(--main-section)
+            w-10 h-150 bg-(--primary-color)
             rounded-r-full opacity-50 z-0">
         </div>
 
         <div class="hidden md:block absolute right-0 top-15 
-            w-10 h-150 bg-(--main-section)
+            w-10 h-150 bg-(--primary-color)
             rounded-l-full opacity-50 z-0">
         </div>
         <div class="container mx-auto px-4">
 
             <div class="flex flex-col md:flex-row overflow-hidden rounded-3xl">
                 <div
-                    class="order-2 md:order-1 bg-(--main-section) p-10 md:p-14 flex flex-col justify-center space-y-6 relative">
+                    class="order-2 md:order-1 bg-(--primary-color) p-10 md:p-14 flex flex-col justify-center space-y-6 relative">
 
                     <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-full w-fit shadow-sm">
                         <img src="assets/img/mainsection/Recipes.png" class="w-5 h-5">
@@ -124,60 +124,234 @@ wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap" rel="style
             </div>
         </div>
     </main>
-  <section class="font-['Inter'] container mx-auto pt-40">
+    <section class="font-['Inter'] container mx-auto pt-40">
 
-  <div class="row pb-20">
-    <h1 class=" font-semibold text-[48px] leading-[100%] tracking-[-0.04em]">
-      Categories
-    </h1>
-    <button class="ml-auto bg-(--main-section) w-50 h-15 rounded-xl  font-semibold text-[16px] leading-[100%] tracking-[-0.02em]">
-      View All Categories
-    </button>
-  </div>
+        <div class="row pb-20">
+            <h1 class=" font-semibold text-[48px] leading-[100%] tracking-[-0.04em]">
+                Categories
+            </h1>
+            <button
+                class="ml-auto bg-(--main-section) w-50 h-15 rounded-xl  font-semibold text-[16px] leading-[100%] tracking-[-0.02em]">
+                View All Categories
+            </button>
+        </div>
 
-  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 justify-items-center">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 justify-items-center">
 
-    <div class="relative w-45 h-50.5 flex flex-col items-center">
-      <img src="assets/img/Categoriesimgs/Breakfast.png" class="w-25 h-25 block relative z-10">
-      <div class="absolute bottom-0 left-0 w-45 h-38 rounded-xl z-0 bg-linear-to-b from-[var(--color-Breakfast-card-from)] "></div>
-      <h1 class="relative z-10  font-semibold text-[18px] leading-[100%] tracking-[-0.02em] mt-12.5">Breakfast</h1>
-    </div>
+            <div class="relative w-45 h-50.5 flex flex-col items-center">
+                <img src="assets/img/Categoriesimgs/Breakfast.png" class="w-25 h-25 block relative z-10">
+                <div
+                    class="absolute bottom-0 left-0 w-45 h-38 rounded-xl z-0 bg-linear-to-b from-[var(--color-Breakfast)] ">
+                </div>
+                <h1 class="relative z-10  font-semibold text-[18px] leading-[100%] tracking-[-0.02em] mt-12.5">Breakfast
+                </h1>
+            </div>
 
-    <div class="relative w-45 h-50.5 flex flex-col items-center">
-      <img src="assets/img/Categoriesimgs/Vegan.png" class="w-25 h-25 block relative z-10">
-      <div class="absolute bottom-0 left-0 w-45 h-38 rounded-xl z-0 bg-linear-to-b from-[var(--color-Vegan-card-from)] "></div>
-      <h1 class="relative z-10  font-semibold text-[18px] leading-[100%] tracking-[-0.02em] mt-12.5">Vegan</h1>
-    </div>
+            <div class="relative w-45 h-50.5 flex flex-col items-center">
+                <img src="assets/img/Categoriesimgs/Vegan.png" class="w-25 h-25 block relative z-10">
+                <div
+                    class="absolute bottom-0 left-0 w-45 h-38 rounded-xl z-0 bg-linear-to-b from-[var(--color-Vegan)] ">
+                </div>
+                <h1 class="relative z-10  font-semibold text-[18px] leading-[100%] tracking-[-0.02em] mt-12.5">Vegan
+                </h1>
+            </div>
 
-    <div class="relative w-45 h-50.5 flex flex-col items-center">
-      <img src="assets/img/Categoriesimgs/Meat.png" class="w-25 h-25 block relative z-10">
-      <div class="absolute bottom-0 left-0 w-45 h-38 rounded-xl z-0 bg-linear-to-b from-[var(--color-Meat-card-from)] "></div>
-      <h1 class="relative z-10  font-semibold text-[18px] leading-[100%] tracking-[-0.02em] mt-12.5">Meat</h1>
-    </div>
+            <div class="relative w-45 h-50.5 flex flex-col items-center">
+                <img src="assets/img/Categoriesimgs/Meat.png" class="w-25 h-25 block relative z-10">
+                <div
+                    class="absolute bottom-0 left-0 w-45 h-38 rounded-xl z-0 bg-linear-to-b from-[var(--color-Meat)] ">
+                </div>
+                <h1 class="relative z-10  font-semibold text-[18px] leading-[100%] tracking-[-0.02em] mt-12.5">Meat</h1>
+            </div>
 
-    <div class="relative w-45 h-50.5 flex flex-col items-center">
-      <img src="assets/img/Categoriesimgs/Dessert.png" class="w-25 h-25 block relative z-10">
-      <div class="absolute bottom-0 left-0 w-45 h-38 rounded-xl z-0 bg-linear-to-b from-[var(--color-Dessert-card-from)] "></div>
-      <h1 class="relative z-10  font-semibold text-[18px] leading-[100%] tracking-[-0.02em] mt-12.5">Dessert</h1>
-    </div>
+            <div class="relative w-45 h-50.5 flex flex-col items-center">
+                <img src="assets/img/Categoriesimgs/Dessert.png" class="w-25 h-25 block relative z-10">
+                <div
+                    class="absolute bottom-0 left-0 w-45 h-38 rounded-xl z-0 bg-linear-to-b from-[var(--color-Dessert)] ">
+                </div>
+                <h1 class="relative z-10  font-semibold text-[18px] leading-[100%] tracking-[-0.02em] mt-12.5">Dessert
+                </h1>
+            </div>
 
-    <div class="relative w-45 h-50.5 flex flex-col items-center">
-      <img src="assets/img/Categoriesimgs/Lunch.png" class="w-25 h-25 block relative z-10">
-      <div class="absolute bottom-0 left-0 w-45 h-38 rounded-xl z-0 bg-linear-to-b from-[var(--color-Lunch-card-from)] "></div>
-      <h1 class="relative z-10 font-semibold text-[18px] leading-[100%] tracking-[-0.02em] mt-12.5">Lunch</h1>
-    </div>
+            <div class="relative w-45 h-50.5 flex flex-col items-center">
+                <img src="assets/img/Categoriesimgs/Lunch.png" class="w-25 h-25 block relative z-10">
+                <div
+                    class="absolute bottom-0 left-0 w-45 h-38 rounded-xl z-0 bg-linear-to-b from-[var(--color-Lunch)] ">
+                </div>
+                <h1 class="relative z-10 font-semibold text-[18px] leading-[100%] tracking-[-0.02em] mt-12.5">Lunch</h1>
+            </div>
 
-    <div class="relative w-45 h-50.5 flex flex-col items-center">
-      <img src="assets/img/Categoriesimgs/Chocolate.png" class="w-25 h-25 block relative z-10">
-      <div class="absolute bottom-0 left-0 w-45 h-38 rounded-xl z-0 bg-linear-to-b from-[var(--color-Chocolate-card-from)] "></div>
-      <h1 class="relative z-10  font-semibold text-[18px] leading-[100%] tracking-[-0.02em] mt-12.5">Chocolate</h1>
-    </div>
+            <div class="relative w-45 h-50.5 flex flex-col items-center">
+                <img src="assets/img/Categoriesimgs/Chocolate.png" class="w-25 h-25 block relative z-10">
+                <div
+                    class="absolute bottom-0 left-0 w-45 h-38 rounded-xl z-0 bg-linear-to-b from-[var(--color-Chocolate)] ">
+                </div>
+                <h1 class="relative z-10  font-semibold text-[18px] leading-[100%] tracking-[-0.02em] mt-12.5">Chocolate
+                </h1>
+            </div>
 
-  </div>
+        </div>
 
-</section>
+    </section>
 
+    <section class="pt-45.75">
+        <div class="flex flex-col justify-center items-center text-center pb-44">
+            <h1 class="font-['Inter'] text-[18px] leading-[100%] tracking-[-0.04em] p-5">Simple and tasty recipes</h1>
+            <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod <br>
+                tempor incididunt ut labore et dolore magna aliqut enim ad minim </p>
 
+        </div>
+        <div class="grid grid-cols-3 gap-6 justify-items-center max-w-5xl mx-auto">
+            <div class="bg-linear-to-t from-[var(--Primary-color)] rounded-3xl p-4 w-75">
+                <div class="relative">
+                    <img src="assets/img/Recipes/Cheeseburger.png" class="w-full h-50 object-cover rounded-2xl">
+
+                    <div
+                        class="absolute top-3 right-3 bg-white w-10 h-10 rounded-full flex items-center justify-center shadow">
+                        ❤️
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h2 class="font-semibold text-lg">Big and Juicy Wagyu Beef Cheeseburger</h2>
+                    <div class="flex gap-4 mt-2 text-sm text-gray-600">
+                        <span>⏱ 30 Minutes</span>
+                        <span>🍴 Food</span>
+                    </div>
+                </div>
+            </div>
+            
+           <div class="bg-linear-to-t from-[var(--Primary-color)] rounded-3xl p-4 w-75">
+                <div class="relative">
+                    <img src="assets/img/Recipes/Salamon.png" class="w-full h-50 object-cover rounded-2xl">
+
+                    <div
+                        class="absolute top-3 right-3 bg-white w-10 h-10 rounded-full flex items-center justify-center shadow">
+                        🤍
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h2 class="font-semibold text-lg">Fresh Lime Roasted Salmon with Ginger Sauce</h2>
+                    <div class="flex gap-4 mt-2 text-sm text-gray-600">
+                        <span>⏱ 30 Minutes</span>
+                        <span>🍴 Food</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-linear-to-t from-[var(--Primary-color)] rounded-3xl p-4 w-75">
+                <div class="relative">
+                    <img src="assets/img/Recipes/Pancake.png" class="w-full h-50 object-cover rounded-2xl">
+
+                    <div
+                        class="absolute top-3 right-3 bg-white w-10 h-10 rounded-full flex items-center justify-center shadow">
+                        🤍
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h2 class="font-semibold text-lg">Strawberry Oatmeal Pancake with Honey Syrup</h2>
+                    <div class="flex gap-4 mt-2 text-sm text-gray-600">
+                        <span>⏱ 30 Minutes</span>
+                        <span>🍴 Food</span>
+                    </div>
+                </div>
+            </div>
+           <div class="bg-linear-to-t from-[var(--Primary-color)] rounded-3xl p-4 w-75">
+                <div class="relative">
+                    <img src="assets/img/Recipes/MayonnaiseSalad.png" class="w-full h-50 object-cover rounded-2xl">
+
+                    <div
+                        class="absolute top-3 right-3 bg-white w-10 h-10 rounded-full flex items-center justify-center shadow">
+                        ❤️
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h2 class="font-semibold text-lg">Fresh and Healthy Mixed Mayonnaise Salad</h2>
+                    <div class="flex gap-4 mt-2 text-sm text-gray-600">
+                        <span>⏱ 30 Minutes</span>
+                        <span>🍴 Food</span>
+                    </div>
+                </div>
+            </div>
+             <div class="bg-linear-to-t from-[var(--Primary-color)] rounded-3xl p-4 w-75">
+                <div class="relative">
+                    <img src="assets/img/Recipes/Chicken.png" class="w-full h-50 object-cover rounded-2xl">
+
+                    <div
+                        class="absolute top-3 right-3 bg-white w-10 h-10 rounded-full flex items-center justify-center shadow">
+                        🤍
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h2 class="font-semibold text-lg">Chicken Meatballs with Cream Cheese</h2>
+                    <div class="flex gap-4 mt-2 text-sm text-gray-600">
+                        <span>⏱ 30 Minutes</span>
+                        <span>🍴 Food</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="assets/img/Recipes/Ads.png">
+            </div>
+              <div class="bg-linear-to-t from-[var(--Primary-color)] rounded-3xl p-4 w-75">
+                <div class="relative">
+                    <img src="assets/img/Recipes/FruityPancake.png" class="w-full h-50 object-cover rounded-2xl">
+
+                    <div
+                        class="absolute top-3 right-3 bg-white w-10 h-10 rounded-full flex items-center justify-center shadow">
+                        ❤️
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h2 class="font-semibold text-lg">Fruity Pancake with Orange & Blueberry</h2>
+                    <div class="flex gap-4 mt-2 text-sm text-gray-600">
+                        <span>⏱ 30 Minutes</span>
+                        <span>🍴 Food</span>
+                    </div>
+                </div>
+            </div>
+           <div class="bg-linear-to-t from-[var(--Primary-color)] rounded-3xl p-4 w-75">
+                <div class="relative">
+                    <img src="assets/img/Recipes/ChickenRice.png" class="w-full h-50 object-cover rounded-2xl">
+
+                    <div
+                        class="absolute top-3 right-3 bg-white w-10 h-10 rounded-full flex items-center justify-center shadow">
+                        🤍
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h2 class="font-semibold text-lg">The Best Easy One Pot Chicken and Rice</h2>
+                    <div class="flex gap-4 mt-2 text-sm text-gray-600">
+                        <span>⏱ 30 Minutes</span>
+                        <span>🍴 Food</span>
+                    </div>
+                </div>
+            </div>
+              <div class="bg-linear-to-t from-[var(--Primary-color)] rounded-3xl p-4 w-75">
+                <div class="relative">
+                    <img src="assets/img/Recipes/Pasta.png" class="w-full h-50 object-cover rounded-2xl">
+
+                    <div
+                        class="absolute top-3 right-3 bg-white w-10 h-10 rounded-full flex items-center justify-center shadow">
+                        🤍
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h2 class="font-semibold text-lg">The Creamiest Creamy Chicken and Bacon Pasta</h2>
+                    <div class="flex gap-4 mt-2 text-sm text-gray-600">
+                        <span>⏱ 30 Minutes</span>
+                        <span>🍴 Food</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 
