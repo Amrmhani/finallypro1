@@ -892,16 +892,6 @@
     --tw-outline-style: none;
     outline-style: none;
   }
-  .sm\:flex {
-    @media (width >= 40rem) {
-      display: flex;
-    }
-  }
-  .sm\:hidden {
-    @media (width >= 40rem) {
-      display: none;
-    }
-  }
   .sm\:grid-cols-2 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1026,6 +1016,21 @@
   .lg\:text-left {
     @media (width >= 64rem) {
       text-align: left;
+    }
+  }
+  .xl\:m-auto {
+    @media (width >= 80rem) {
+      margin: auto;
+    }
+  }
+  .xl\:mr-auto {
+    @media (width >= 80rem) {
+      margin-right: auto;
+    }
+  }
+  .xl\:ml-auto {
+    @media (width >= 80rem) {
+      margin-left: auto;
     }
   }
   .xl\:block {
