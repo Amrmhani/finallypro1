@@ -12,6 +12,7 @@
     --color-Dessert:#F09E001A;
     --color-Lunch:#0000000D;
     --color-Chocolate:#0000000D;  
+    --color-d: #f5f5f5;
 }
 @utility row{
     @apply flex items-center ;
