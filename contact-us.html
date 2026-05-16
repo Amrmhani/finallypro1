@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,
+wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="border-b border-(--line-color) w-full">
+        <div class=" flex  justify-between items-center ">
+
+            <div class="row pl-20 py-10">
+                <a class="font-['Lobster'] w-27.5 h-7.5 font-normal">
+                    Foodieland
+                </a>
+            </div>
+
+            <div class="row justify-center ">
+                <ul class="row pr-20 pl-20 gap-10 font-['Inter'] hidden md:flex">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Recipse.html">Recipes</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
+                    <li><a href="About-us.html">About us</a></li>
+                </ul>
+            </div>
+
+            <div class="row justify-end">
+                <ul class="row pr-20 py-11 gap-10 hidden lg:flex">
+                    <li><img src="assets/img/navimgs/facebook.png"></li>
+                    <li><img src="assets/img/navimgs/twiter.png"></li>
+                    <li><img src="assets/img/navimgs/instagram.png"></li>
+                </ul>
+            </div>
+            <div class="flex md:hidden ml-auto pr-5">
+                <button>
+                    <img src="assets/img/navimgs/Menu.png">
+                </button>
+            </div>
+            <div class="hidden md:flex lg:hidden ml-auto pr-5">
+                <button>
+                    <img src="assets/img/navimgs/send.png" class="w-5 h-5 object-contain">
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+  <main class="container mx-auto mt-22 px-4">
+
+    <h1
+        class="text-center font-['Inter'] font-semibold text-[40px] sm:text-[64px] leading-[100%] tracking-[-0.04em]">
+        contact us
+    </h1>
+
+<div class="flex flex-col lg:flex-row items-stretch gap-10 mt-16">
+        <div class="flex justify-center w-full lg:w-auto">
+            <img src="assets/img/contactimg/main.png"
+                class="w-100 h-118 bg-linear-to-t object-cover from-[var(--Primary-color)] rounded-3xl">
+        </div>
+
+        <form class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full md:w-210 h-118 lg:ml-10">
+
+            <div class="flex flex-col">
+                <label>Name</label>
+
+                <input type="text"
+                    placeholder="Enter your name..."
+                    class="bg-[#FFFFFF] sm:px-6 px-3 rounded-3xl w-full h-20 border border-[#0000001A] mt-3">
+            </div>
+
+            <div class="flex flex-col">
+                <label>EMAIL ADDRESS</label>
+
+                <input type="email"
+                    placeholder="Your email address..."
+                    class="bg-[#FFFFFF] sm:px-6 px-3 rounded-3xl w-full h-20 border border-[#0000001A] mt-3">
+            </div>
+
+            <div class="flex flex-col">
+                <label>Subject</label>
+
+                <input type="text"
+                    placeholder="Enter subject..."
+                    class="bg-[#FFFFFF] sm:px-6 px-3 rounded-3xl w-full h-20 border border-[#0000001A] mt-3">
+            </div>
+
+            <div class="flex flex-col">
+
+                <label class="mb-3 text-sm font-medium tracking-[0.1em]">
+                    ENQUIRY TYPE
+                </label>
+
+                <select
+                    class="bg-white rounded-3xl w-full h-20 border border-[#0000001A] text-gray-500 px-4">
+
+                    <option disabled selected>
+                        Advertising
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div class="flex flex-col md:col-span-2">
+
+                <label class="mb-3 text-sm font-medium tracking-[0.1em]">
+                    MESSAGES
+                </label>
+
+                <textarea
+                    placeholder="Enter your massages..."
+                    class="bg-[#FFFFFF] w-full h-50 rounded-2xl border border-[#0000001A] py-4 px-4 resize-none outline-none"></textarea>
+
+            </div>
+            <div>
+                <button class="bg-black text-white w-45 h-16 rounded-2xl">Submit</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</main>
+</body>
+
+</html>
