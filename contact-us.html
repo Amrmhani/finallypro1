@@ -10,7 +10,7 @@
 wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-bacground text-forground transition-colors duration-300">
     <header class="border-b border-(--line-color) w-full">
         <div class=" flex  justify-between items-center ">
 
@@ -29,6 +29,17 @@ wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap" rel="style
                     <li><a href="About-us.html">About us</a></li>
                 </ul>
             </div>
+          <button  class="theme-toggle relative w-16 h-8 rounded-full bg-gray-300 dark:bg-gray-700 transition-colors duration-300 hidden md:flex">
+
+        <div class="toggle-circle absolute left-1 top-1 w-6 h-6 rounded-full bg-white shadow-md
+            flex items-center justify-center
+            transition-transform duration-300">
+
+            <span class="theme-icon">🌙</span>
+
+        </div>
+
+    </button>
 
             <div class="row justify-end">
                 <ul class="row pr-20 py-11 gap-10 hidden lg:flex">
@@ -37,10 +48,34 @@ wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap" rel="style
                     <li><img src="assets/img/navimgs/instagram.png"></li>
                 </ul>
             </div>
-            <div class="flex md:hidden ml-auto pr-5">
-                <button>
+           <div class="flex md:hidden ml-auto pr-5 relative">
+                <button data-menu-toggle>
                     <img src="assets/img/navimgs/Menu.png">
                 </button>
+
+                <div data-mobile-menu
+                    class="hidden lg:hidden absolute top-full right-0 mt-3 w-40 bg-white dark:bg-gray-900 flex flex-col gap-4 p-5 rounded-xl shadow-lg z-10">
+                    <a href="index.html">Home</a>
+                    <a href="Recipse.html">Recipes</a>
+                    <a href="Blog.html">Blog</a>
+                    <a href="contact-us.html">contact</a>
+                    <a href="About-us.html">About us</a>
+                    <div class="flex items-center justify-between mt-4 pt-4 border-t">
+    <span>Theme</span>
+
+    <button class="theme-toggle relative w-16 h-8 rounded-full bg-gray-300 dark:bg-gray-700 transition-colors duration-300">
+
+        <div class="toggle-circle absolute left-1 top-1 w-6 h-6 rounded-full bg-white shadow-md
+            flex items-center justify-center
+            transition-transform duration-300">
+
+            <span class="theme-icon">🌙</span>
+
+        </div>
+
+    </button>
+</div>
+                </div>
             </div>
             <div class="hidden md:flex lg:hidden ml-auto pr-5">
                 <button>
@@ -71,7 +106,7 @@ wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap" rel="style
 
                 <input type="text"
                     placeholder="Enter your name..."
-                    class="bg-[#FFFFFF] sm:px-6 px-3 rounded-3xl w-full h-20 border border-[#0000001A] mt-3">
+                    class="bg-[#FFFFFF]  text-black placeholder:text-gray-500sm:px-6 px-3 rounded-3xl w-full h-20 border border-[#0000001A] mt-3">
             </div>
 
             <div class="flex flex-col">
@@ -79,7 +114,7 @@ wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap" rel="style
 
                 <input type="email"
                     placeholder="Your email address..."
-                    class="bg-[#FFFFFF] sm:px-6 px-3 rounded-3xl w-full h-20 border border-[#0000001A] mt-3">
+                    class="bg-[#FFFFFF] text-black placeholder:text-gray-500 sm:px-6 px-3 rounded-3xl w-full h-20 border border-[#0000001A] mt-3">
             </div>
 
             <div class="flex flex-col">
@@ -87,7 +122,7 @@ wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap" rel="style
 
                 <input type="text"
                     placeholder="Enter subject..."
-                    class="bg-[#FFFFFF] sm:px-6 px-3 rounded-3xl w-full h-20 border border-[#0000001A] mt-3">
+                    class="bg-[#FFFFFF] text-black placeholder:text-gray-500 sm:px-6 px-3 rounded-3xl w-full h-20 border border-[#0000001A] mt-3">
             </div>
 
             <div class="flex flex-col">
@@ -115,7 +150,7 @@ wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap" rel="style
 
                 <textarea
                     placeholder="Enter your massages..."
-                    class="bg-[#FFFFFF] w-full h-50 rounded-2xl border border-[#0000001A] py-4 px-4 resize-none outline-none"></textarea>
+                    class="bg-[#FFFFFF] text-black placeholder:text-gray-500 w-full h-50 rounded-2xl border border-[#0000001A] py-4 px-4 resize-none outline-none"></textarea>
 
             </div>
             <div>
@@ -211,6 +246,8 @@ wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap" rel="style
 
 
     </footer>
+        <script src="assets/main.js"></script>
+
 </body>
 
 </html>
